@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../Header"
+import CocomposteCestQuoi from "./PartieCocomposteCestQuoi"
 import "./HomePage.css"
 const onClickScrollDown = () => {
   window.scrollTo({top : window.innerHeight*1.02 ,behavior:"smooth"})
@@ -18,7 +19,7 @@ const HomePage = () => {
        <img className="arrow"src="https://labsud.org/wp-content/uploads/2017/07/down-arrow.png" style={{height :"20px" , width : "50px"}} alt=""/>
        </div>
        </div>
-<div className="col-6 cocomposte-slogan">
+<div className="col-md-6 col-10 cocomposte-slogan">
  <h1>Cocomposte </h1> promeut la réduction des déchets et le bien être animal par l'installation de poulaillers urbains et propose des oeufs frais aux habitants en échange de leurs déchets alimentaires compostables
   </div>
 
@@ -26,7 +27,7 @@ const HomePage = () => {
 < Header />
 </div>
 <div className="container bg-success" style={{height:"60vh"}}>
-  partie articles 
+  <CocomposteCestQuoi/>
 </div>
 <div className="container bg-primary" style={{height:"40vh"}}>
   partie photos

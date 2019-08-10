@@ -64,10 +64,10 @@ class GoogleAuth extends React.Component {
     } else {
       return (
         <Modal
-          title="Accès Interdit"
-          content="ce compte ne possède pas les droit d'administration"
+          title="Administration Refusée"
+          content="ce compte ne possède pas les droit d'administration, toute modification ne sera pas prise en compte"
           actions={this.onAccessDenied()}
-          onDismiss={() => history.push("/")}
+          onDismiss={() => history.push("/admin")}
         />
       );
     }

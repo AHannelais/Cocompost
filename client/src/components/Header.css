@@ -7,5 +7,12 @@
 }
 
 .navbar {
-    font-family: "Amatic" , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: "Amatic" , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em
+}
+.logo {
+  
+   background-color: aqua;
+    
+
 }

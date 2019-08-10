@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Amatic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Amatic-Bold.ttf') 
+    
+}
+
+h2, h3 {
+    font-family: "Amatic" ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+p {
+    font-family:  Helvetica, Arial,sans-serif
+}

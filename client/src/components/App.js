@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import history from '../history'
-
+import './App.css'
 import HomePage from './Pages/client/HomePage'
 import AdminPage from './Pages/admin/AdminPage'
 import CreateArticle from './Pages/admin/CreateArticle'
