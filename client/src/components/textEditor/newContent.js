@@ -1,124 +1,124 @@
 const newContent = {
   blocks: [
     {
-      key: 'fhqmh',
-      text: '',
-      type: 'unstyled',
+      key: "fhqmh",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '4296d',
-      text: '',
-      type: 'unstyled',
+      key: "4296d",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '3ekv0',
-      text: '',
-      type: 'unstyled',
+      key: "3ekv0",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '9gqvk',
-      text: '',
-      type: 'unstyled',
+      key: "9gqvk",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: 'cendm',
-      text: '',
-      type: 'unstyled',
+      key: "cendm",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: 'f6gd',
-      text: '',
-      type: 'unstyled',
+      key: "f6gd",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '2po55',
-      text: '',
-      type: 'unstyled',
+      key: "2po55",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '12n1v',
-      text: '',
-      type: 'unstyled',
+      key: "12n1v",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: 'eahhq',
-      text: '',
-      type: 'unstyled',
+      key: "eahhq",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: 'e0g0r',
-      text: '',
-      type: 'unstyled',
+      key: "e0g0r",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '3hcua',
-      text: '',
-      type: 'unstyled',
+      key: "3hcua",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: '7seh3',
-      text: '',
-      type: 'unstyled',
+      key: "7seh3",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
+      data: {},
     },
     {
-      key: 'f1vgr',
-      text: '',
-      type: 'unstyled',
+      key: "f1vgr",
+      text: "",
+      type: "unstyled",
       depth: 0,
       inlineStyleRanges: [],
       entityRanges: [],
-      data: {}
-    }
+      data: {},
+    },
   ],
-  entityMap: {}
-}
+  entityMap: {},
+};
 
-export default newContent
+export default newContent;

@@ -1,36 +1,36 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { createArticle, editArticle } from '../../actions'
+import React from "react";
+import { connect } from "react-redux";
+import { createArticle, editArticle } from "../../actions";
 
 const onSaveClick = props => {
-  const { title, author, content } = props
-  const article = { title, author, content }
+  const { title, author, content } = props;
+  const article = { title, author, content };
 
-  if (props.TypeOfEdition === 'create') {
-    props.createArticle(article)
+  if (props.TypeOfEdition === "create") {
+    props.createArticle(article);
   }
-  if (props.TypeOfEdition === 'edit') {
-    props.editArticle(props.id, article)
+  if (props.TypeOfEdition === "edit") {
+    props.editArticle(props.id, article);
   }
-}
+};
 const Save = props => {
   if (props.title && props.author) {
-    if (props.TypeOfEdition === 'create' || 'edit') {
+    if (props.TypeOfEdition === "create" || "edit") {
       return (
         <button
-          className='btn btn-primary'
+          className="btn btn-primary"
           onClick={() => {
-            onSaveClick(props)
+            onSaveClick(props);
           }}
         >
           Save
         </button>
-      )
+      );
     }
   }
-  return <React.Fragment />
-}
+  return <React.Fragment />;
+};
 export default connect(
   null,
   { createArticle, editArticle }
-)(Save)
+)(Save);

@@ -1,75 +1,75 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { fetchArticles } from '../../../actions'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { connect } from "react-redux";
+import { fetchArticles } from "../../../actions";
+import { Link } from "react-router-dom";
 class ArticleController extends React.Component {
-  componentDidMount () {
-    this.props.fetchArticles()
+  componentDidMount() {
+    this.props.fetchArticles();
   }
-  renderAdmin (stream) {
+  renderAdmin(stream) {
     if (stream.userId === this.props.currentUserId) {
       return (
-        <div className='right floated content'>
-          <Link to={`/streams/edit/${stream.id}`} className='ui button primary'>
-            Edit{' '}
+        <div className="right floated content">
+          <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
+            Edit{" "}
           </Link>
           <Link
             to={`/streams/delete/${stream.id}`}
-            className=' ui button negative'
+            className=" ui button negative"
           >
             Delete
           </Link>
         </div>
-      )
+      );
     }
   }
 
-  renderList () {
+  renderList() {
     return this.props.streams.map(stream => {
       return (
-        <div className='item' key={stream.id}>
+        <div className="item" key={stream.id}>
           {this.renderAdmin(stream)}
-          <i className='large middle aligned icon camera' />
-          <div className='content'>
-            <Link to={`/streams/${stream.id}`} className='header'>
+          <i className="large middle aligned icon camera" />
+          <div className="content">
+            <Link to={`/streams/${stream.id}`} className="header">
               {stream.title}
             </Link>
-            <div className='description'>{stream.description}</div>
+            <div className="description">{stream.description}</div>
           </div>
         </div>
-      )
-    })
+      );
+    });
   }
-  renderCreate () {
+  renderCreate() {
     if (this.props.isSignedIn) {
       return (
-        <div style={{ textAlign: 'right' }}>
-          <Link to='/streams/new' className='ui button primary'>
-            {' '}
+        <div style={{ textAlign: "right" }}>
+          <Link to="/streams/new" className="ui button primary">
+            {" "}
             Create Stream
           </Link>
         </div>
-      )
+      );
     }
   }
-  render () {
+  render() {
     return (
       <div>
         <h2>Streams</h2>
-        <div className='ui celled list'> {this.renderList()} </div>
+        <div className="ui celled list"> {this.renderList()} </div>
         {this.renderCreate()}
       </div>
-    )
+    );
   }
 }
 const mapStateToProps = state => {
   return {
     streams: Object.values(state.articles),
     currentUserId: state.auth.userId,
-    isSignedIn: state.auth.isSignedIn
-  }
-}
+    isSignedIn: state.auth.isSignedIn,
+  };
+};
 export default connect(
   mapStateToProps,
   { fetchArticles }
-)(ArticleController)
+)(ArticleController);
