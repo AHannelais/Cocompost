@@ -1,52 +1,43 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 class ContactSuggestions extends React.Component {
-  state = { gmail: false };
-  onclickGmail = () => {
-    this.setState({ gmail: true });
-    navigator.clipboard.writeText("mabit");
-    console.log("copied");
-  };
-  onClickOutGmail = () => {
-    this.setState({ gmail: false });
-  };
-
-  render() {
+  render () {
     return (
       <ContactWrapper onclick>
         <Messenger
-          href="https://www.facebook.com/WeAreCocomposte/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://m.me/WeAreCocomposte'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fab fa-facebook-messenger" />
+          <i className='fab fa-facebook-messenger' />
         </Messenger>
         <Gmail
-          href="https://www.facebook.com/WeAreCocomposte/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='mailto:contact.composte@gmail.com'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fas fa-envelope" />
+          <i className='fas fa-envelope' />
         </Gmail>
         <Facebook
-          href="https://www.facebook.com/WeAreCocomposte/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://www.facebook.com/WeAreCocomposte/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          <i className="fab fa-facebook-f" />
+          <i className='fab fa-facebook-f' />
         </Facebook>
       </ContactWrapper>
-    );
+    )
   }
 }
-export default ContactSuggestions;
+export default ContactSuggestions
 
 // Style
 
 const ContactWrapper = styled.div`
   position: sticky;
-  bottom: 10px;
+  z-index: 1001;
+  bottom: 20px;
   right: 20px;
   display: flex;
   flex-direction: row-reverse;
@@ -70,9 +61,14 @@ const ContactWrapper = styled.div`
     transition: all 0.25s;
     font-size: 25px;
     @media screen and (min-width: 950px) {
-      width: 70px;
-      height: 70px;
+      width: calc(2vw + 40px);
+      height: calc(2vw + 40px);
+      font-size: calc(1vw + 15px);
     }
+    @media screen and (min-width: 1950px) {
+      border: 4px solid #99c413 !important;
+    }
+
     i {
       margin: auto;
     }
@@ -82,7 +78,7 @@ const ContactWrapper = styled.div`
       border-color: #ffffff !important;
     }
   }
-`;
-const Facebook = styled.a``;
-const Gmail = styled.a``;
-const Messenger = styled.a``;
+`
+const Facebook = styled.a``
+const Gmail = styled.a``
+const Messenger = styled.a``
